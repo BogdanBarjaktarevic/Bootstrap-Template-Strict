@@ -1,0 +1,25 @@
+footer {
+	padding-top: 27px;
+	padding-bottom: 27px;
+	.col-md-3:first-child {
+		margin-top: 13px;
+		@media (max-width: 998px) {
+			margin-bottom: 20px;
+		}
+	}
+	.col-md-3 > p {
+		margin: 0;
+		color: $paragraph-color;
+	}
+	@media (max-width: 998px) {
+		text-align: center;
+	}
+	.col-md-3 > img {
+		transition:0.4s all ease;
+		cursor: pointer;
+    			&:hover {
+    				transform: scale(1.1);
+    				border-radius: 50%;
+    			}
+	}
+}

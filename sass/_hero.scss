@@ -1,0 +1,56 @@
+#hero {
+	background-image: url("../img/hero.jpg");
+	background-position: center center;
+	background-size: cover;
+	padding-top: 224px;
+	padding-bottom: 280px;
+	background-attachment: fixed;
+	@media (max-width: 998px) {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+	h1 {
+		text-transform: uppercase;
+		font-size: 100px;
+		color: white;
+		@media (max-width: 998px) {
+			font-size: 50px;
+		}
+	}
+	hr {
+		border-width: 3px;
+		border-color: $blue-color;
+		width: 55%;
+		margin-bottom: 40px;
+	}
+	h4 {
+		color: white;
+	}
+	#button-call-to-action {
+		width: 180px;
+		display: block;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		border: 2px solid $blue-color;
+		margin: 0 auto;
+		font-size: 18px;
+		color: white;
+		margin-top: 68px;
+		border-radius: 5px;
+		text-decoration: none;
+		&:hover {
+			background-color: $blue-color;
+		}
+	}
+	.arrow-row {
+		margin-top: 180px;
+		.glyphicon-chevron-down {
+			font-size: 50px;
+			color: white;
+			transition:0.7s all ease;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

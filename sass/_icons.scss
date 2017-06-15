@@ -1,0 +1,27 @@
+#icons {
+	padding-top: 65px;
+	padding-bottom: 70px;
+	h3 {
+		margin-top: 35px;
+		margin-bottom: 20px;
+		@media (max-width: 998px){
+			margin-bottom: 10px;
+		}
+	}
+	p {
+		color: $paragraph-color;
+	}
+	.col-md-4 {
+		@media (max-width: 998px){
+			margin-bottom: 30px;
+		}
+	}
+	.col-md-4 > img {
+		cursor: pointer;
+		transition:0.5s all ease;
+		&:hover {
+    			transform: scale(1.2);
+    			border-radius: 50%;
+    		}
+	}
+}
